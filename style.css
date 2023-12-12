@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    height: auto;
+    width: 200px;
+}
+
+header{
+    grid-area: h;
+}
+
+nav{
+    grid-area: n;
+    background-color: rgb(51, 51, 51);
+}
+
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+footer{
+    grid-area: f;
+    text-align: center;
+    background-color: rgb(254, 163, 1);
+}
+
+#fotartalom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'h h h'
+    'n n n'
+    'm m m'
+    'f f f';
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-image: url('kepek/black.png')
+}
+
+/*#kozep{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}*/
+
+main, main *{
+    background-color: rgb(211, 211, 211);
+}
+
+aside *{
+    color: black;
+}
+
+a:hover{
+    background-color: rgb(255, 127, 0);
+}
